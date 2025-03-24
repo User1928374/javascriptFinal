@@ -1,10 +1,65 @@
+body{
+    background-image: url('website-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: rgb(103, 200, 207);
+    border: 1px solid grey
+}
+#logo-container{
+    display: flex;
+    align-items: center; 
 }
 #logo-airplane{
-    height: 70px;
+    height: 80px;
     width: auto;
 }
+#logo-text{
+    font-size: 30px;
+    font-family: cursive, sans-serif;
+}
+
+
+#nav-links{
+    display: flex;
+    gap: 50px;
+}
+#nav-links a{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#searchbar{
+    position: relative;
+    margin-right: 20px;
+}
+#searchbar input{
+    height: 30px;
+    padding-right: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#searchbar button{
+    position: absolute;
+    height: 70%;
+    top: 5px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid rgb(68, 66, 182);
+    background-color: rgb(152, 165, 179);
+    cursor: pointer;
+}
+#search-button{
+    right: 80px;
+}
+#reset-button{
+    right: 20px;
+}
+
