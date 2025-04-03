@@ -1,14 +1,21 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 body{
     background-image: url('website-background.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(103, 200, 207);
-    border: 1px solid grey
+    opacity: 0.9;
 }
 #logo-container{
     display: flex;
@@ -41,19 +48,22 @@ nav{
 }
 #searchbar input{
     height: 30px;
-    padding-right: 150px;
+    padding-right: 200px;
     border: 1px solid black;
     border-radius: 10px;
+    padding-left: 5px;
 }
 
 #searchbar button{
     position: absolute;
+    padding: 0 5px;
     height: 70%;
     top: 5px;
     border: none;
     border-radius: 10px;
     border: 1px solid rgb(68, 66, 182);
-    background-color: rgb(152, 165, 179);
+    background-color: rgb(181, 210, 240);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
 }
 #search-button{
@@ -61,5 +71,92 @@ nav{
 }
 #reset-button{
     right: 20px;
+}
+
+
+/*home css*/
+#home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 80vh;
+    width: 60vh;
+    padding-left: 200px;
+}
+#home-container h1{
+    font-size: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#home-container p{
+    font-size: 20px;
+}
+
+/*about us css*/
+
+#about-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 30px;
+    height: 70vh;
+    width: 60vh;
+    padding-left: 100px;;
+}
+
+#about-container h1{
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#about-container p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+#team-container h1{
+    font-size: 80px;
+}
+
+#team-members{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+#team-members section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 45px;
+    border-radius: 20px;
+    outline: 1px solid white;
+    width: 200px;
+}
+
+#team-members section h3{
+    font-size: 25px;
+    max-width: 100%;
+}
+
+#team-members section p{
+    font-size: 20px;
+}
+
+#team-members section h4{
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 12px 20px;
+    border-radius: 10px;
 }
 

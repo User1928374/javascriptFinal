@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../javascriptFinal.css">
+    <title>Travel Recommendation</title>
+</head>
+<body>
+    <nav>
+        <div id="logo-container">
+            <img id="logo-airplane" src="../logo_image.png" alt="Airplane Logo">
+            <span id="logo-text">TravelTracker</span>
+        </div>
+
+        <div id="nav-links">
+            <a href=#home onclick="loadPage('index')">Home</a>
+            <a href=#about onclick="loadPage('about')">About</a>
+            <a href=#contact-us onclick="loadPage('contact')">Contact Us</a>
+        </div>
+
+        <div id="searchbar">
+            <input type="text" placeholder="Enter destination or keyword">
+            <button id="search-button" type="submit">Search</button>
+            <button id="reset-button" type="reset">Clear</button>
+                        
+        </div>
+        
+    </nav>
+
+    <div id="page-section">
+        <div id="contact-container">
+            <h1>Contact Us</h1>
+
+            <div id="input-container">
+                <input type="text" placeholder="Name">
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascriptFinal.js"></script>
+</body>
+</html>
