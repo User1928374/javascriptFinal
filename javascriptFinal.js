@@ -28,7 +28,7 @@ const searchButton = document.getElementById('search-button');
 
 searchButton.addEventListener('click', function() {
 
-    fetch('../javascriptFinal_api.json')
+    fetch('javascriptFinal_api.json')
     .then(response => response.json())
     .then(json => {
 
