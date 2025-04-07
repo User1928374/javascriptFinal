@@ -75,11 +75,16 @@ nav{
 
 
 /*home css*/
+#search-seperate{
+    display: flex;
+    gap: 200px;
+}
+
 #home-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
     height: 80vh;
     width: 60vh;
     padding-left: 200px;
@@ -91,6 +96,49 @@ nav{
 #home-container p{
     font-size: 20px;
 }
+
+#search-result{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 50px;
+    height: 750px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#result-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#result-2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#search-result section{
+    height: 30px;
+    width: 300px;
+    background-color: rgb(9, 66, 2);
+    border-radius: 15px;
+}
+
+#search-result img{
+    height: auto;
+    width: 100%;
+}
+#search-result p{
+    flex: 1;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+
 
 /*about us css*/
 
@@ -160,3 +208,59 @@ nav{
     border-radius: 10px;
 }
 
+/*Contact us css*/
+
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    height: 70vh;
+    width: auto;
+}
+
+#contact-container h1{
+    font-size: 100px;
+}
+
+#details-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+    background-color: rgba(38, 119, 165, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#details-form label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#details-form input{
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(236, 221, 221, 0.7);
+    border-radius: 10px;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+
+#details-form textarea{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: 1px solid black;
+    background-color: rgba(236, 221, 221, 0.7);
+}
+
+#details-form button{
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(36, 160, 32, 0.75);
+    border-radius: 10px;
+    cursor: pointer;
+}
